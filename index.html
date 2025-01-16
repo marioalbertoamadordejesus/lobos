@@ -4,110 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lobos de Montaña</title>
-    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>Lobos de Montaña</h1>
             <ul>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#events">Eventos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#tienda">Tienda</a></li>
             </ul>
         </nav>
     </header>
-    <section id="gallery">
-        <h2>Galería</h2>
-        <p>Explora nuestras aventuras y conquistas en la montaña.</p>
-        <div class="gallery-container">
-            <img src="montaña1.jpg" alt="Montaña 1">
-            <img src="montaña2.jpg" alt="Montaña 2">
-            <img src="montaña3.jpg" alt="Montaña 3">
+
+    <section id="nosotros">
+        <h1>Nosotros</h1>
+        <p>Somos un grupo apasionado por el senderismo y las aventuras al aire libre. Únete a nosotros para explorar los paisajes más increíbles.</p>
+    </section>
+
+    <section id="galeria">
+        <h1>Galería</h1>
+        <div class="gallery">
+            <img src="img1.jpg" alt="Paisaje 1">
+            <img src="img2.jpg" alt="Paisaje 2">
+            <img src="img3.jpg" alt="Paisaje 3">
         </div>
     </section>
-    <section id="events">
-        <h2>Próximos Eventos</h2>
-        <p>¡Únete a nuestras actividades y vive la emoción del montañismo!</p>
-        <ul class="events-list">
-            <li>
-                <strong>Excursión a la cascada burbuja</strong> - 18 de Enero, 2025
-                <p>Un recorrido relajado en el municipio de Amecameca.</p>
-            </li>
-            <li>
-                <strong>Camping bajo las estrellas</strong> - 25 de enero, 2025
-                <p>Vive la experiencia de una noche inolvidable en la montaña.</p>
-            </li>
-            <li>
-                <strong>lago los reyes Tlahuac</strong> - 2 de febrero, 2025
-                <p>disfruta de un dia relejante en lago de los reyes en Tlahuac.</p>
-            </li>
+
+    <section id="eventos">
+        <h1>Eventos</h1>
+        <ul>
+            <li>Salida a Cascada Burbujas</li>
+            <li>Salida Campamento Mensual</li>
+            <li>Trajineras Tláhuac</li>
         </ul>
     </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta o quieres unirte? Escríbenos.</p>
-        <form action="#">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Correo Electrónico:</label>
+
+    <section id="blog">
+        <h1>Blog</h1>
+        <article>
+            <h2>¿Qué se necesita para el senderismo?</h2>
+            <p>Para el senderismo, es importante contar con calzado adecuado, ropa cómoda, agua, comida ligera, y un mapa o GPS.</p>
+        </article>
+    </section>
+
+    <section id="contacto">
+        <h1>Contacto</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
             <button type="submit">Enviar</button>
         </form>
-        <body>
-    <header>
-        <h1>Tienda Lobos de Montaña</h1>
-        <nav>
-            <ul>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#carrito">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="productos">
-            <h2>Productos</h2>
-            <div class="producto">
-                <h3>Playera</h3>
-                <p>Precio: $200 MXN</p>
-                <button onclick="agregarAlCarrito('Playera', 200)">Agregar al carrito</button>
-            </div>
-            <div class="producto">
-                <h3>Termo</h3>
-                <p>Precio: $150 MXN</p>
-                <button onclick="agregarAlCarrito('Termo', 150)">Agregar al carrito</button>
-            </div>
-            <div class="producto">
-                <h3>Power Band</h3>
-                <p>Precio: $100 MXN</p>
-                <button onclick="agregarAlCarrito('Power Band', 100)">Agregar al carrito</button>
-            </div>
-        </section>
-
-        <section id="carrito">
-            <h2>Carrito de Compras</h2>
-            <ul id="lista-carrito">
-                <!-- Los productos agregados aparecerán aquí -->
-            </ul>
-            <p>Total: $<span id="total-carrito">0</span> MXN</p>
-            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
-        </section>
-    </main>
     </section>
+
+    <section id="tienda">
+        <h1>Tienda</h1>
+        <div class="productos">
+            <div class="producto">
+                <h2>Playeras</h2>
+                <p>Playeras cómodas y resistentes para tus aventuras.</p>
+            </div>
+            <div class="producto">
+                <h2>Power Banks</h2>
+                <p>Baterías portátiles para mantener tus dispositivos cargados.</p>
+            </div>
+            <div class="producto">
+                <h2>Sudaderas</h2>
+                <p>Sudaderas cálidas y perfectas para el senderismo.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Lobos de Montaña. Todos los derechos reservados.</p>
-    <div class="social-links">
-        <a href="https://www.facebook.com/groups/591948119865359" target="_blank" title="Facebook">
-            <img src="facebook-icon.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/lobosdelamontana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram">
-            <img src="instagram-icon.png" alt="Instagram">
-        </a>
-    </div>
-        
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
